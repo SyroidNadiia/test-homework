@@ -348,12 +348,27 @@
 
 
 
-const fruits = [ 'banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple', ];
-// const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
-const randomFruit = fruits[Math.random() * fruits.length)
+// const fruits = [ 'banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple', ];
+// // const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+// const randomFruit = fruits[Math.random() * fruits.length];
+
+// console.log(randomFruit); // поверне рандомний фрукт із масиву
 
 
 
-console.log(randomFruit); // поверне рандомний фрукт із масиву
 
+// Знайти найбільше число з масиву
+const numbers = [3, 454, 4656, 234, 577, 8989, 3455, 867, 65656, 4656, 8876, 77766]
+let maxNumber = 0;
+for (let i = 0; i < numbers.length; i += 1) {
+    maxNumber = numbers[0];
 
+    if (numbers[i] < maxNumber) {
+        continue;
+    } else {
+        maxNumber = numbers[i];
+    }
+
+}
+
+console.log(maxNumber);
